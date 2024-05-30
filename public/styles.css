@@ -1,0 +1,57 @@
+body {
+   font-family: 'Open Sans', sans-serif; /* Clean and elegant font */
+   margin: 0;
+   padding: 20px;
+   background-color: #e0f2f1; /* Light blue background */
+ }
+ 
+ h1, h2 {
+   margin: 10px 0;
+   color: #333; /* Dark text */
+ }
+ 
+ ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex; /* Use flexbox for two columns */
+   flex-wrap: wrap; /* Allow items to wrap if needed */
+ }
+ 
+ li {
+   margin-bottom: 15px;
+   flex: 0 0 45%; /* Set width for two columns */
+   padding: 10px;
+   border-radius: 5px; /* Rounded corners */
+   background-color: #fff; /* White background for posts */
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+ }
+ 
+ a {
+   text-decoration: none;
+   color: #333;
+ }
+ 
+ .post-content {
+   display: flex; /* Optional: Two columns within post */
+   flex-wrap: wrap;
+ }
+ 
+ .post-title {
+   flex: 1; /* Take up most space within post */
+ }
+ 
+ .post-image {
+   width: 40%; /* Optional: Image in one column */
+   margin-bottom: 10px; /* If using post-image class */
+ }
+ 
+ /* Optional: Styling for subtle asymmetry */
+ .post-content:nth-child(odd) .post-image {
+   order: 1; /* Move image to left side for odd posts */
+ }
+ 
+ .post-content:nth-child(even) .post-image {
+   order: 2; /* Move image to right side for even posts */
+ }
+ 
